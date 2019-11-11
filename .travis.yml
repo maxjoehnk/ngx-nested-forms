@@ -1,5 +1,6 @@
-language: node
+language: node_js
 node_js:
-  - node
+    - node
+cache: yarn
 script:
-  - yarn build-ci
+    - yarn build-ci
