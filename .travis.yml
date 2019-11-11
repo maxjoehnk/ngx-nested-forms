@@ -4,6 +4,8 @@ node_js:
 cache: yarn
 script:
 - yarn build
+before_deploy:
+  - cd dist/ngx-nested-forms
 deploy:
   provider: npm
   email: maxjoehnk@gmail.com
