@@ -1,6 +1,14 @@
 language: node_js
 node_js:
-    - node
+- node
 cache: yarn
 script:
-    - yarn build-ci
+- yarn build
+deploy:
+  provider: npm
+  email: maxjoehnk@gmail.com
+  api_key:
+    secure: ER33chdMKA5SOwhgP3bTcYUJaq442p9kRZvq4nvfRgupnd1Z8K3Ef7JRjUOvRAbG1IigMbTl4GcvWE8J3xnlbITU4UQLxeCOiqC1QKQGDVumDjCOUlAK2vHAq3h8g9WgMD0UB4HLWhhYk2jjgZI5PYh0vFqoUKmA0ksD+MhGcm3CfqQDIyGTi0kvceBCo3Tjou60LSejdw1cnRwOuHt9Nz8xrhfWH6Dj5ridqEhWzmtUujl/UaAUsufHIEtALGVEKa3LCKlxISzC+ldrwhkVC3323yuSBgoVV7t4aBXi8U9uFlqhfuJMv5M8IANKHw6iDyb6y8ym8lD+dq96UBK+fQ8Y/OTL7/VQxzSXqAzXKc0KWfa6VCw6T/BW0qyyaSWQ9iQ+LPT8yALwJ69PWce0ijqnPtnNwBEM7mkr4KFNqqLpFn13IDDIlD1IvcmgikE62Pqk5Q/1oVDTWd2R4R9fprjykZR8MqF3rMdmO/xpZI6vUREDs4Dr2wSh0ZVhza6bM3Nd+9lpZJ4MXNZsY0t/ZTgo4xKZtVyhE9bJGDrwGLmMPgR4Zs8yDt3O19QPllerEpg5+zAekPoy7CQz5cey1yWtIcqkuDvJcGYtrjpNjk2xkR6OZwaNAT4r8AxWNFmf1c2AionyyUwIlptu7xKbcKOv408BXcPqSoJfreiBvws=
+  on:
+    tags: true
+    repo: maxjoehnk/ngx-nested-forms
