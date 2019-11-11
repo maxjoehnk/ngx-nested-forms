@@ -1,0 +1,16 @@
+{
+    "name": "ngx-nested-forms",
+    "version": "0.0.1",
+    "peerDependencies": {
+        "@angular/common": "^8.2.13",
+        "@angular/core": "^8.2.13",
+        "@angular/forms": "^8.2.13"
+    },
+    "author": "Max Jöhnk <maxjoehnk@gmail.com",
+    "repository": "https://github.com/maxjoehnk/ngx-nested-forms",
+    "keywords": [
+        "angular",
+        "forms"
+    ],
+    "bugs": "https://github.com/maxjoehnk/ngx-nested-forms/issues"
+}
